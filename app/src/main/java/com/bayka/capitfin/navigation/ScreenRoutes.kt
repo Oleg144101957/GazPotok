@@ -8,6 +8,11 @@ sealed class ScreenRoutes(val route: String) {
     data object NoNetworkScreen : ScreenRoutes(NO_NETWORK_SCREEN)
     data object SettingsScreen : ScreenRoutes(SETTINGS_SCREEN)
     data object OnboardingScreen : ScreenRoutes(ONBOARDING_SCREEN)
+    data object CurrencyRatesScreen : ScreenRoutes(CURRENCY_RATES_SCREEN)
+    data object InvestmentCalculatorScreen : ScreenRoutes(INVESTMENT_CALCULATION_SCREEN)
+    data object LoanCalculatorScreen : ScreenRoutes(LOAN_CALCULATION_SCREEN)
+    data object MyLoanTrackerScreen : ScreenRoutes(MY_LOAN_TRACKER_SCREEN)
+    data object SavingsGoalsScreen : ScreenRoutes(SAVING_GOALS_SCREEN)
 
     companion object {
         private const val SPLASH_SCREEN = "Splash_Screen"
@@ -16,5 +21,10 @@ sealed class ScreenRoutes(val route: String) {
         private const val NO_NETWORK_SCREEN = "No_Network_Screen"
         private const val SETTINGS_SCREEN = "Settings_Screen"
         private const val ONBOARDING_SCREEN = "Onboarding_Screen"
+        private const val CURRENCY_RATES_SCREEN = "Currency_Rates_Screen"
+        private const val INVESTMENT_CALCULATION_SCREEN = "Investment_Calculator_Screen"
+        private const val LOAN_CALCULATION_SCREEN = "Loan_Calculator_Screen"
+        private const val MY_LOAN_TRACKER_SCREEN = "My_Loan_Tracker_Screen"
+        private const val SAVING_GOALS_SCREEN = "Savings_Goals_Screen"
     }
 }

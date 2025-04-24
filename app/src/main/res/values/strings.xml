@@ -7,4 +7,9 @@
     <string name="try_again">Try again</string>
     <string name="welcome">Welcome</string>
     <string name="start">Start</string>
+    <string name="currency_rates">Currency Rates</string>
+    <string name="loan_calculator">Loan Calculator</string>
+    <string name="my_loan_tracker">My Loan Tracker</string>
+    <string name="savings_goals">Savings Goals</string>
+    <string name="investment_calculator">Investment Calculator</string>
 </resources>

@@ -6,9 +6,14 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.bayka.capitfin.ui.screens.AboutScreen
+import com.bayka.capitfin.ui.screens.CurrencyRatesScreen
 import com.bayka.capitfin.ui.screens.HomeScreen
+import com.bayka.capitfin.ui.screens.InvestmentCalculatorScreen
+import com.bayka.capitfin.ui.screens.LoanCalculatorScreen
+import com.bayka.capitfin.ui.screens.MyLoanTrackerScreen
 import com.bayka.capitfin.ui.screens.NoNetworkScreen
 import com.bayka.capitfin.ui.screens.OnboardingScreen
+import com.bayka.capitfin.ui.screens.SavingsGoalsScreen
 import com.bayka.capitfin.ui.screens.SettingsScreen
 import com.bayka.capitfin.ui.screens.SplashScreen
 
@@ -37,6 +42,26 @@ fun NavigationHost(navController: NavHostController, innerPadding: PaddingValues
 
         composable(route = ScreenRoutes.OnboardingScreen.route) {
             OnboardingScreen(navController, innerPadding)
+        }
+
+        composable(route = ScreenRoutes.CurrencyRatesScreen.route) {
+            CurrencyRatesScreen(navController, innerPadding)
+        }
+
+        composable(route = ScreenRoutes.InvestmentCalculatorScreen.route) {
+            InvestmentCalculatorScreen(navController, innerPadding)
+        }
+
+        composable(route = ScreenRoutes.LoanCalculatorScreen.route) {
+            LoanCalculatorScreen(navController, innerPadding)
+        }
+
+        composable(route = ScreenRoutes.MyLoanTrackerScreen.route) {
+            MyLoanTrackerScreen(navController, innerPadding)
+        }
+
+        composable(route = ScreenRoutes.SavingsGoalsScreen.route) {
+            SavingsGoalsScreen(navController, innerPadding)
         }
     }
 }

@@ -41,6 +41,26 @@ fun Menu(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
+        RedButton(R.string.currency_rates, modifier = Modifier) {
+            navController.navigate(ScreenRoutes.CurrencyRatesScreen.route)
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        RedButton(R.string.loan_calculator, modifier = Modifier) {
+            navController.navigate(ScreenRoutes.LoanCalculatorScreen.route)
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        RedButton(R.string.my_loan_tracker, modifier = Modifier) {
+            navController.navigate(ScreenRoutes.MyLoanTrackerScreen.route)
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        RedButton(R.string.savings_goals, modifier = Modifier) {
+            navController.navigate(ScreenRoutes.SavingsGoalsScreen.route)
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        RedButton(R.string.investment_calculator, modifier = Modifier) {
+            navController.navigate(ScreenRoutes.InvestmentCalculatorScreen.route)
+        }
+        Spacer(modifier = Modifier.height(16.dp))
         RedButton(R.string.settings, modifier = Modifier) {
             navController.navigate(ScreenRoutes.SettingsScreen.route)
         }
