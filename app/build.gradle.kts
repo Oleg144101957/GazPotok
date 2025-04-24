@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -64,4 +65,7 @@ dependencies {
     implementation(libs.hilt.core)
     implementation(libs.androidx.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
+
+    implementation("com.google.firebase:firebase-config-ktx:22.0.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
 }
