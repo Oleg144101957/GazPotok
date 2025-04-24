@@ -1,6 +1,8 @@
 package com.bayka.capitfin.ui.screens
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,6 +15,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.White
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.bayka.capitfin.R
@@ -30,7 +35,26 @@ fun HomeScreen(navController: NavHostController, innerPadding: PaddingValues) {
         contentAlignment = Alignment.Center
     ) {
         Background()
-        Menu(navController)
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(White.copy(0.5f))
+        )
+        Column(
+            Modifier
+                .fillMaxSize()
+                .padding(8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Spacer(Modifier.height(32.dp))
+            Image(
+                painterResource(R.drawable.logo), R.drawable.logo.toString(),
+                modifier = Modifier.fillMaxWidth(0.8f),
+                contentScale = ContentScale.FillWidth
+            )
+            Spacer(Modifier.height(32.dp))
+            Menu(navController)
+        }
     }
 }
 
@@ -63,10 +87,6 @@ fun Menu(navController: NavHostController) {
         Spacer(modifier = Modifier.height(16.dp))
         RedButton(R.string.settings, modifier = Modifier) {
             navController.navigate(ScreenRoutes.SettingsScreen.route)
-        }
-        Spacer(modifier = Modifier.height(16.dp))
-        RedButton(R.string.about_btn, modifier = Modifier) {
-            navController.navigate(ScreenRoutes.AboutScreen.route)
         }
     }
 }
