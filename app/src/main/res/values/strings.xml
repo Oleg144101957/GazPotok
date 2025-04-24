@@ -13,4 +13,15 @@
     <string name="savings_goals">Savings Goals</string>
     <string name="investment_calculator">Investment Calculator</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="enter_weight">Enter weight in grams</string>
+    <string name="calculate">Calculate</string>
+    <string name="invalid_weight">Please enter a valid weight</string>
+    <string name="price_result">Price: %.3f $</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="platinum">Platinum</string>
+    <string name="convert">Convert</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="convert_result">Convert result: %.3f </string>
+    <string name="invalid_amount">Please enter a valid number</string>
 </resources>

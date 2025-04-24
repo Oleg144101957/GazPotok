@@ -6,7 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.bayka.capitfin.ui.screens.AboutScreen
-import com.bayka.capitfin.ui.screens.CurrencyRatesScreen
+import com.bayka.capitfin.ui.screens.currency_rates.CurrencyRatesScreen
 import com.bayka.capitfin.ui.screens.HomeScreen
 import com.bayka.capitfin.ui.screens.investment_calculator.InvestmentCalculatorScreen
 import com.bayka.capitfin.ui.screens.LoanCalculatorScreen

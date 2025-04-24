@@ -1,4 +1,4 @@
-package com.bayka.capitfin.ui.screens.investment_calculator
+package com.bayka.capitfin.ui.screens.currency_rates
 
 import android.content.Context
 import androidx.compose.runtime.getValue
@@ -13,23 +13,23 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class InvestmentCalculatorViewModel @Inject constructor(
+class CurrencyRatesViewModel @Inject constructor(
     private val remoteConfigRepo: RemoteConfigRepo
 ) : ViewModel() {
 
-    var goldPrice by mutableStateOf(10.742)
+    var euroPrice by mutableStateOf(1.138)
         private set
-    var silverPrice by mutableStateOf(1.07)
+    var dollarPrice by mutableStateOf(1.0)
         private set
-    var platinumPrice by mutableStateOf(32.02)
+    var liraPrice by mutableStateOf(0.0261)
         private set
 
     fun loadData(context: Context) {
         viewModelScope.launch {
             val data = remoteConfigRepo.takeDataFromADistantStorage(context)
-            goldPrice = data[RemoteConfigRepoImpl.GOLD]?.toDoubleOrNull() ?: 10.742
-            silverPrice = data[RemoteConfigRepoImpl.SILVER]?.toDoubleOrNull() ?: 1.07
-            platinumPrice = data[RemoteConfigRepoImpl.PLATINUM]?.toDoubleOrNull() ?: 32.02
+            euroPrice = data[RemoteConfigRepoImpl.EURO]?.toDoubleOrNull() ?: 1.138
+            dollarPrice = data[RemoteConfigRepoImpl.DOLLAR]?.toDoubleOrNull() ?: 1.0
+            liraPrice = data[RemoteConfigRepoImpl.LIRA]?.toDoubleOrNull() ?: 0.0261
         }
     }
 }
