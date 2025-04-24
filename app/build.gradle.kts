@@ -65,7 +65,7 @@ dependencies {
     implementation(libs.hilt.core)
     implementation(libs.androidx.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
-
-    implementation("com.google.firebase:firebase-config-ktx:22.0.1")
-    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    implementation(libs.androidx.browser)
+    implementation(libs.firebase.config.ktx)
+    implementation(platform(libs.firebase.bom))
 }

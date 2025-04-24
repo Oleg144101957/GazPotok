@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.bayka.capitfin.R
@@ -18,10 +18,11 @@ import com.bayka.capitfin.navigation.ScreenRoutes
 import com.bayka.capitfin.ui.elements.Background
 import com.bayka.capitfin.ui.elements.IconButton
 import com.bayka.capitfin.ui.elements.WhiteButton
+import com.bayka.capitfin.util.CustomTabsUtil
 
 @Composable
 fun SettingsScreen(navController: NavController, innerPadding: PaddingValues) {
-    val uriHandler = LocalUriHandler.current
+    val context = LocalContext.current
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -40,7 +41,10 @@ fun SettingsScreen(navController: NavController, innerPadding: PaddingValues) {
             }
             Spacer(Modifier.height(36.dp))
             WhiteButton(R.string.privacy_policy, modifier = Modifier) {
-                uriHandler.openUri("https://telegra.ph/Privacy-Policy-for-BaykarFinTech-04-24")
+                CustomTabsUtil.openCustomTab(
+                    context,
+                    "https://telegra.ph/Privacy-Policy-for-BaykarFinTech-04-24"
+                )
             }
             Spacer(modifier = Modifier.height(16.dp))
             WhiteButton(R.string.about_btn, modifier = Modifier) {
