@@ -13,6 +13,14 @@
     <string name="savings_goals">Savings Goals</string>
     <string name="investment_calculator">Investment Calculator</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="loan_amount">Loan amount</string>
+    <string name="interest_rate">Interest rate (%)</string>
+    <string name="loan_term_in_months">Loan term (in months)</string>
+    <string name="total_amount_of_payments_2f">Total amount of payments: %.2f</string>
+    <string name="overpayment_2f">Overpayment: %.2f</string>
+    <string name="please_enter_correct_data">Please enter correct data</string>
+    <string name="already_paid">Already paid</string>
+    <string name="loan_balance_2f">Loan balance: %.2f</string>
     <string name="enter_weight">Enter weight in grams</string>
     <string name="calculate">Calculate</string>
     <string name="invalid_weight">Please enter a valid weight</string>
