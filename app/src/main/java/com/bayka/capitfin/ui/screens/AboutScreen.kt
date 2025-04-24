@@ -1,9 +1,12 @@
 package com.bayka.capitfin.ui.screens
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -20,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.bayka.capitfin.R
 import com.bayka.capitfin.ui.elements.Background
+import com.bayka.capitfin.ui.elements.IconButton
 
 @Composable
 fun AboutScreen(navController: NavController, innerPadding: PaddingValues) {
@@ -30,16 +34,26 @@ fun AboutScreen(navController: NavController, innerPadding: PaddingValues) {
         contentAlignment = Alignment.Center
     ) {
         Background()
-        Text(
-            text = stringResource(R.string.about),
-            fontSize = 24.sp,
-            modifier = Modifier
-                .padding(16.dp)
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState()),
-            color = Color.White,
-            textAlign = TextAlign.Justify,
-            fontWeight = FontWeight.Bold
-        )
+        Column(
+            Modifier
+                .fillMaxSize()
+                .padding(8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            IconButton(modifier = Modifier.align(Alignment.Start)) {
+                navController.popBackStack()
+            }
+            Spacer(Modifier.height(36.dp))
+            Text(
+                text = stringResource(R.string.about),
+                fontSize = 24.sp,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .verticalScroll(rememberScrollState()),
+                color = Color.White,
+                textAlign = TextAlign.Justify,
+                fontWeight = FontWeight.Bold
+            )
+        }
     }
 }

@@ -2,16 +2,21 @@ package com.bayka.capitfin.ui.elements
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.bayka.capitfin.R
 import com.bayka.capitfin.ui.theme.Red
 
 @Composable
@@ -48,6 +53,25 @@ fun WhiteButton(textRes: Int, modifier: Modifier = Modifier, onClick: () -> Unit
             stringResource(textRes),
             fontSize = 24.sp,
             modifier = Modifier.padding(vertical = 4.dp)
+        )
+    }
+}
+
+@Composable
+fun IconButton(
+    modifier: Modifier = Modifier,
+    iconRes: Int = R.drawable.ic_back,
+    onClick: () -> Unit
+) {
+    IconButton(
+        onClick = { onClick() },
+        modifier = modifier.size(40.dp)
+    ) {
+        Icon(
+            painterResource(iconRes),
+            contentDescription = iconRes.toString(),
+            tint = White,
+            modifier = Modifier.size(32.dp)
         )
     }
 }

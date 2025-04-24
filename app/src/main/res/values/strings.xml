@@ -2,7 +2,7 @@
     <string name="app_name">BaykarFinTech</string>
     <string name="about_btn">About</string>
     <string name="settings">Settings</string>
-    <string name="about">About this app</string>
+    <string name="about">BaykarFinTech is your trusted partner in personal finance.\nWe build simple and smart tools for calculation, planning, and financial tracking.\n\nWith our app, you can:\n\n- Check real-time currency exchange rates\n\n- Accurately calculate loan conditions\n\n- Track your current loans\n\n- Set and monitor savings goals\n\n- Analyze investment potential\n\nBaykarFinTech — smart finances, made simple and timely.</string>
     <string name="no_internet">No internet connection\n\n Please try again later</string>
     <string name="try_again">Try again</string>
     <string name="welcome">Welcome</string>
@@ -12,4 +12,5 @@
     <string name="my_loan_tracker">My Loan Tracker</string>
     <string name="savings_goals">Savings Goals</string>
     <string name="investment_calculator">Investment Calculator</string>
+    <string name="privacy_policy">Privacy Policy</string>
 </resources>
