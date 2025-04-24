@@ -13,7 +13,7 @@ import com.bayka.capitfin.ui.screens.LoanCalculatorScreen
 import com.bayka.capitfin.ui.screens.MyLoanTrackerScreen
 import com.bayka.capitfin.ui.screens.NoNetworkScreen
 import com.bayka.capitfin.ui.screens.OnboardingScreen
-import com.bayka.capitfin.ui.screens.SavingsGoalsScreen
+import com.bayka.capitfin.ui.screens.saving_goals.SavingsGoalsScreen
 import com.bayka.capitfin.ui.screens.SettingsScreen
 import com.bayka.capitfin.ui.screens.SplashScreen
 
