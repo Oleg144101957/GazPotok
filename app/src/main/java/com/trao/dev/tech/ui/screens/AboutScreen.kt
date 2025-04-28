@@ -14,16 +14,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.trao.dev.R
+import com.trao.dev.tech.R
 import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.IconButton
+import com.trao.dev.tech.ui.theme.DarkRed
 
 @Composable
 fun AboutScreen(navController: NavController, innerPadding: PaddingValues) {
@@ -50,7 +50,7 @@ fun AboutScreen(navController: NavController, innerPadding: PaddingValues) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .verticalScroll(rememberScrollState()),
-                color = Color.White,
+                color = DarkRed,
                 textAlign = TextAlign.Justify,
                 fontWeight = FontWeight.Bold
             )

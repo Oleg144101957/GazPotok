@@ -6,16 +6,12 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -23,7 +19,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color.Companion.Transparent
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -33,11 +28,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.trao.dev.R
+import com.trao.dev.tech.R
 import com.trao.dev.tech.ui.elements.Background
+import com.trao.dev.tech.ui.elements.CustomOutlinedTextField
 import com.trao.dev.tech.ui.elements.IconButton
-import com.trao.dev.tech.ui.theme.DarkPink
-import com.trao.dev.tech.ui.theme.Red
+import com.trao.dev.tech.ui.theme.Gradient
 
 @Composable
 fun MyLoanTrackerScreen(navController: NavController, innerPadding: PaddingValues) {
@@ -83,121 +78,54 @@ fun MyLoanTrackerScreen(navController: NavController, innerPadding: PaddingValue
                 navController.popBackStack()
             }
             Spacer(Modifier.height(36.dp))
-            OutlinedTextField(
-                value = loanAmount,
-                onValueChange = { loanAmount = it },
-                label = {
-                    Text(
-                        stringResource(R.string.loan_amount),
-                        fontSize = 18.sp,
-                        color = Red
-                    )
-                },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                modifier = Modifier.fillMaxWidth(),
-                colors = TextFieldDefaults.colors(
-                    focusedTextColor = White,
-                    unfocusedTextColor = White,
-                    focusedContainerColor = Transparent,
-                    unfocusedContainerColor = Transparent,
-                    cursorColor = White,
-                    focusedIndicatorColor = Red,
-                    unfocusedIndicatorColor = Red
-                ),
-                textStyle = TextStyle(fontSize = 18.sp)
-            )
 
-            OutlinedTextField(
-                value = interestRate,
-                onValueChange = { interestRate = it },
-                label = {
-                    Text(
-                        stringResource(R.string.interest_rate),
-                        fontSize = 18.sp,
-                        color = Red
-                    )
-                },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                modifier = Modifier.fillMaxWidth(),
-                colors = TextFieldDefaults.colors(
-                    focusedTextColor = White,
-                    unfocusedTextColor = White,
-                    focusedContainerColor = Transparent,
-                    unfocusedContainerColor = Transparent,
-                    cursorColor = White,
-                    focusedIndicatorColor = Red,
-                    unfocusedIndicatorColor = Red
-                ),
-                textStyle = TextStyle(fontSize = 18.sp)
-            )
-
-            OutlinedTextField(
-                value = loanTerm,
-                onValueChange = { loanTerm = it },
-                label = {
-                    Text(
-                        stringResource(R.string.loan_term_in_months),
-                        fontSize = 18.sp,
-                        color = Red
-                    )
-                },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                modifier = Modifier.fillMaxWidth(),
-                colors = TextFieldDefaults.colors(
-                    focusedTextColor = White,
-                    unfocusedTextColor = White,
-                    focusedContainerColor = Transparent,
-                    unfocusedContainerColor = Transparent,
-                    cursorColor = White,
-                    focusedIndicatorColor = Red,
-                    unfocusedIndicatorColor = Red
-                ),
-                textStyle = TextStyle(fontSize = 18.sp)
-            )
-
-            OutlinedTextField(
-                value = paidSoFar,
-                onValueChange = { paidSoFar = it },
-                label = {
-                    Text(
-                        stringResource(R.string.already_paid),
-                        fontSize = 18.sp,
-                        color = Red
-                    )
-                },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                modifier = Modifier.fillMaxWidth(),
-                colors = TextFieldDefaults.colors(
-                    focusedTextColor = White,
-                    unfocusedTextColor = White,
-                    focusedContainerColor = Transparent,
-                    unfocusedContainerColor = Transparent,
-                    cursorColor = White,
-                    focusedIndicatorColor = Red,
-                    unfocusedIndicatorColor = Red
-                ),
-                textStyle = TextStyle(fontSize = 18.sp)
-            )
-
-            Spacer(Modifier.height(16.dp))
-
-            Box(
+            Column(
                 Modifier
                     .fillMaxWidth()
-                    .aspectRatio(1.5f)
-                    .background(DarkPink, RoundedCornerShape(16.dp)),
-                contentAlignment = Alignment.Center
+                    .background(Gradient, RoundedCornerShape(16.dp))
+                    .padding(16.dp)
             ) {
+                CustomOutlinedTextField(
+                    value = loanAmount,
+                    onValueChange = { loanAmount = it },
+                    labelText = stringResource(R.string.loan_amount),
+                    keyboardType = KeyboardType.Number
+                )
+                Spacer(Modifier.height(16.dp))
+                CustomOutlinedTextField(
+                    value = interestRate,
+                    onValueChange = { interestRate = it },
+                    labelText = stringResource(R.string.interest_rate),
+                    keyboardType = KeyboardType.Number
+                )
+                Spacer(Modifier.height(16.dp))
+                CustomOutlinedTextField(
+                    value = loanTerm,
+                    onValueChange = { loanTerm = it },
+                    labelText = stringResource(R.string.loan_term_in_months),
+                    keyboardType = KeyboardType.Number
+                )
+                Spacer(Modifier.height(16.dp))
+                CustomOutlinedTextField(
+                    value = paidSoFar,
+                    onValueChange = { paidSoFar = it },
+                    labelText = stringResource(R.string.already_paid),
+                    keyboardType = KeyboardType.Number
+                )
+                Spacer(Modifier.height(16.dp))
+
                 if (totalPayment != null) {
                     Column(
                         Modifier
-                            .fillMaxSize()
+                            .fillMaxWidth()
                             .padding(8.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Center
                     ) {
                         Text(
-                            stringResource(R.string.total_amount_of_payments_2f).format(totalPayment),
+                            stringResource(R.string.total_amount_of_payments_2f).format(
+                                totalPayment
+                            ),
                             style = TextStyle(
                                 color = White,
                                 fontSize = 24.sp,
@@ -232,7 +160,8 @@ fun MyLoanTrackerScreen(navController: NavController, innerPadding: PaddingValue
                         style = TextStyle(
                             color = White,
                             fontSize = 32.sp,
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Bold,
+                            textAlign = TextAlign.Center
                         )
                     )
                 }

@@ -9,7 +9,7 @@ import androidx.compose.ui.res.painterResource
 import com.trao.dev.tech.R
 
 @Composable
-fun Background(drawable: Int = R.drawable.bg_red) {
+fun Background(drawable: Int = R.drawable.trao_bg) {
     Image(
         painter = painterResource(id = drawable),
         contentDescription = drawable.toString(),

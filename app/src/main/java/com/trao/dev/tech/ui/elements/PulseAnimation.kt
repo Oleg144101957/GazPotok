@@ -11,9 +11,9 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.dp
-import com.trao.dev.tech.ui.theme.Pink
 
 @Composable
 fun PulseAnimation(
@@ -39,7 +39,7 @@ fun PulseAnimation(
             }
             .border(
                 width = 10.dp,
-                color = Pink,
+                color = White,
                 shape = CircleShape
             )
     )

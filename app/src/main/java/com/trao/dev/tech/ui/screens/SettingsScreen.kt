@@ -13,11 +13,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.trao.dev.R
+import com.trao.dev.tech.R
 import com.trao.dev.tech.navigation.ScreenRoutes
 import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.IconButton
-import com.trao.dev.tech.ui.elements.WhiteButton
+import com.trao.dev.tech.ui.elements.RedButton
 import com.trao.dev.tech.util.CustomTabsUtil
 
 @Composable
@@ -40,14 +40,14 @@ fun SettingsScreen(navController: NavController, innerPadding: PaddingValues) {
                 navController.popBackStack()
             }
             Spacer(Modifier.height(36.dp))
-            WhiteButton(R.string.privacy_policy, modifier = Modifier) {
+            RedButton(R.string.privacy_policy, modifier = Modifier) {
                 CustomTabsUtil.openCustomTab(
                     context,
                     "https://telegra.ph/Privacy-Policy-for-TPAO-04-28"
                 )
             }
             Spacer(modifier = Modifier.height(16.dp))
-            WhiteButton(R.string.about_btn, modifier = Modifier) {
+            RedButton(R.string.about_btn, modifier = Modifier) {
                 navController.navigate(ScreenRoutes.AboutScreen.route)
             }
         }

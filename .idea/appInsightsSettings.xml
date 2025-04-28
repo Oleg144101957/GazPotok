@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.trao.dev.tech" />
+                  <option name="mobileSdkAppId" value="1:360178469437:android:6f68f4b05b62d73659f854" />
+                  <option name="projectId" value="mega-moolah-48104" />
+                  <option name="projectNumber" value="360178469437" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

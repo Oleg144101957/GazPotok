@@ -16,7 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.trao.dev.R
+import com.trao.dev.tech.R
 import com.trao.dev.tech.ui.theme.Red
 
 @Composable
@@ -60,7 +60,7 @@ fun WhiteButton(textRes: Int, modifier: Modifier = Modifier, onClick: () -> Unit
 @Composable
 fun IconButton(
     modifier: Modifier = Modifier,
-    iconRes: Int = R.drawable.ic_back,
+    iconRes: Int = R.drawable.trao_ic_back,
     onClick: () -> Unit
 ) {
     IconButton(
@@ -70,7 +70,7 @@ fun IconButton(
         Icon(
             painterResource(iconRes),
             contentDescription = iconRes.toString(),
-            tint = White,
+            tint = Red,
             modifier = Modifier.size(32.dp)
         )
     }

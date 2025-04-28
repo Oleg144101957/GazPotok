@@ -2,7 +2,9 @@ package com.trao.dev.tech.di
 
 import android.content.Context
 import com.trao.dev.tech.data.DataStoreImpl
+import com.trao.dev.tech.data.RemoteConfigRepoImpl
 import com.trao.dev.tech.domain.DataStore
+import com.trao.dev.tech.domain.RemoteConfigRepo
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,5 +19,11 @@ object DataModule {
     @Singleton
     fun provideDatastore(@ApplicationContext context: Context): DataStore {
         return DataStoreImpl(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideRemote(): RemoteConfigRepo {
+        return RemoteConfigRepoImpl()
     }
 }

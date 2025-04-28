@@ -20,7 +20,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.trao.dev.R
+import com.trao.dev.tech.R
 import com.trao.dev.tech.navigation.ScreenRoutes
 import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.RedButton
@@ -41,19 +41,22 @@ fun HomeScreen(navController: NavHostController, innerPadding: PaddingValues) {
                 .background(White.copy(0.5f))
         )
         Column(
-            Modifier
-                .fillMaxSize()
-                .padding(8.dp),
+            Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Spacer(Modifier.height(32.dp))
             Image(
-                painterResource(R.drawable.logo), R.drawable.logo.toString(),
-                modifier = Modifier.fillMaxWidth(0.8f),
+                painterResource(R.drawable.trao_flag), R.drawable.trao_flag.toString(),
+                modifier = Modifier.fillMaxWidth(),
                 contentScale = ContentScale.FillWidth
             )
             Spacer(Modifier.height(32.dp))
             Menu(navController)
+            Spacer(Modifier.height(32.dp))
+            Image(
+                painterResource(R.drawable.trao_graphic), R.drawable.trao_graphic.toString(),
+                modifier = Modifier.fillMaxWidth(0.8f),
+                contentScale = ContentScale.FillWidth
+            )
         }
     }
 }
