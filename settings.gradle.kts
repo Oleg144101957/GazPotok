@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BaykarFinTech"
+rootProject.name = "TPAO"
 include(":app")

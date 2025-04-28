@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.bayka.capitfin"
+    namespace = "com.trao.dev.tech"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.bayka.capitfin"
+        applicationId = "com.trao.dev.tech"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -66,6 +66,4 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
     implementation(libs.androidx.browser)
-    implementation(libs.firebase.config.ktx)
-    implementation(platform(libs.firebase.bom))
 }
