@@ -1,5 +1,7 @@
 package com.trao.dev.tech.ui.screens
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -16,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.Black
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -27,9 +30,13 @@ import com.trao.dev.tech.R
 import com.trao.dev.tech.navigation.ScreenRoutes
 import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.RedButton
+import com.trao.dev.tech.util.lockOrientation
 
 @Composable
 fun OnboardingScreen(navController: NavController, paddingValues: PaddingValues) {
+    val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
     Box(
         Modifier
             .fillMaxSize()

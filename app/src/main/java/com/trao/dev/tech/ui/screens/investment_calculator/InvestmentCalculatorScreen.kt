@@ -1,5 +1,7 @@
 package com.trao.dev.tech.ui.screens.investment_calculator
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -42,6 +44,7 @@ import com.trao.dev.tech.ui.elements.IconButton
 import com.trao.dev.tech.ui.elements.WhiteButton
 import com.trao.dev.tech.ui.theme.Gradient
 import com.trao.dev.tech.ui.theme.Red
+import com.trao.dev.tech.util.lockOrientation
 
 @Composable
 fun InvestmentCalculatorScreen(
@@ -50,6 +53,8 @@ fun InvestmentCalculatorScreen(
     viewModel: InvestmentCalculatorViewModel = hiltViewModel()
 ) {
     val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
     var weightInput by remember { mutableStateOf("") }
     var selectedMetal by remember { mutableStateOf("gold") }
     var result by remember { mutableStateOf("") }

@@ -68,4 +68,12 @@ dependencies {
     implementation(libs.androidx.browser)
     implementation(libs.firebase.config.ktx)
     implementation(platform(libs.firebase.bom))
+
+    implementation("com.google.android.gms:play-services-ads-identifier:18.1.0")
+    implementation("com.onesignal:OneSignal:4.8.10")
+    implementation ("com.appsflyer:af-android-sdk:6.15.2")
+    implementation ("com.facebook.android:facebook-android-sdk:16.0.1")
+    implementation("com.google.firebase:firebase-config-ktx:22.0.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    implementation("com.android.installreferrer:installreferrer:2.2")
 }

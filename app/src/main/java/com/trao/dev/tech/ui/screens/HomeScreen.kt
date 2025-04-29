@@ -1,5 +1,7 @@
 package com.trao.dev.tech.ui.screens
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -17,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
@@ -24,9 +27,14 @@ import com.trao.dev.tech.R
 import com.trao.dev.tech.navigation.ScreenRoutes
 import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.RedButton
+import com.trao.dev.tech.util.lockOrientation
 
 @Composable
 fun HomeScreen(navController: NavHostController, innerPadding: PaddingValues) {
+    val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
     BackHandler { }
     Box(
         modifier = Modifier

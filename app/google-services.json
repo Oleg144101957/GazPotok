@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "360178469437",
-    "project_id": "mega-moolah-48104",
-    "storage_bucket": "mega-moolah-48104.firebasestorage.app"
+    "project_number": "139199691166",
+    "project_id": "trao-a1b97",
+    "storage_bucket": "trao-a1b97.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:360178469437:android:6f68f4b05b62d73659f854",
+        "mobilesdk_app_id": "1:139199691166:android:0e06995eac6028829afe8f",
         "android_client_info": {
           "package_name": "com.trao.dev.tech"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCUl_8XSgNZ8s9r5q8Mp3pGsoQd2CFoUA8"
+          "current_key": "AIzaSyBYfcxNnlbpCdD0NuIIYY-jI5RPADSooRo"
         }
       ],
       "services": {

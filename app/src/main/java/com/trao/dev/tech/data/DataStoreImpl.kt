@@ -19,7 +19,17 @@ class DataStoreImpl @Inject constructor(private val context: Context) : DataStor
         return saved.split("||")
     }
 
+    override fun getUrl(): String {
+        return sharedPreferences.getString(GOAL, EMPTY) ?: EMPTY
+    }
+
+    override fun saveUrl(newGoalToSave: String) {
+        sharedPreferences.edit { putString(GOAL, newGoalToSave) }
+    }
+
     companion object {
+        private const val GOAL = "GOAL"
+        private const val EMPTY = "EMPTY"
         const val PREFS_NAME = "prefs"
         const val KEY_SAVINGS = "savings_list"
     }

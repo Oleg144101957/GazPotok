@@ -12,10 +12,11 @@ import com.trao.dev.tech.ui.screens.MyLoanTrackerScreen
 import com.trao.dev.tech.ui.screens.NoNetworkScreen
 import com.trao.dev.tech.ui.screens.OnboardingScreen
 import com.trao.dev.tech.ui.screens.SettingsScreen
-import com.trao.dev.tech.ui.screens.SplashScreen
+import com.trao.dev.tech.ui.screens.content.ContentScreen
 import com.trao.dev.tech.ui.screens.currency_rates.CurrencyRatesScreen
 import com.trao.dev.tech.ui.screens.investment_calculator.InvestmentCalculatorScreen
 import com.trao.dev.tech.ui.screens.saving_goals.SavingsGoalsScreen
+import com.trao.dev.tech.ui.screens.splash.SplashScreen
 
 @Composable
 fun NavigationHost(navController: NavHostController, innerPadding: PaddingValues) {
@@ -26,6 +27,10 @@ fun NavigationHost(navController: NavHostController, innerPadding: PaddingValues
 
         composable(route = ScreenRoutes.HomeScreen.route) {
             HomeScreen(navController, innerPadding)
+        }
+
+        composable(route = ScreenRoutes.ContentScreen.route) {
+            ContentScreen(navController)
         }
 
         composable(route = ScreenRoutes.AboutScreen.route) {

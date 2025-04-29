@@ -1,5 +1,7 @@
 package com.trao.dev.tech.ui.screens
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -20,6 +22,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -33,9 +36,15 @@ import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.CustomOutlinedTextField
 import com.trao.dev.tech.ui.elements.IconButton
 import com.trao.dev.tech.ui.theme.Gradient
+import com.trao.dev.tech.util.lockOrientation
 
 @Composable
 fun MyLoanTrackerScreen(navController: NavController, innerPadding: PaddingValues) {
+
+    val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
     var loanAmount by remember { mutableStateOf("") }
     var interestRate by remember { mutableStateOf("") }
     var loanTerm by remember { mutableStateOf("") }

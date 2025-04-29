@@ -1,5 +1,7 @@
 package com.trao.dev.tech.ui.screens
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -14,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -25,6 +28,7 @@ import com.trao.dev.tech.navigation.ScreenRoutes
 import com.trao.dev.tech.ui.elements.Background
 import com.trao.dev.tech.ui.elements.RedButton
 import com.trao.dev.tech.ui.theme.DarkRed
+import com.trao.dev.tech.util.lockOrientation
 
 @Composable
 fun NoNetworkScreen(
@@ -32,6 +36,9 @@ fun NoNetworkScreen(
     innerPadding: PaddingValues
 ) {
     BackHandler { }
+    val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
     Box(
         modifier = Modifier
