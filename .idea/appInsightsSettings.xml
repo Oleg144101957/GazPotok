@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.sbera.sschet" />
+                  <option name="mobileSdkAppId" value="1:139199691166:android:0e06995eac6028829afe8f" />
+                  <option name="projectId" value="trao-a1b97" />
+                  <option name="projectNumber" value="139199691166" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
