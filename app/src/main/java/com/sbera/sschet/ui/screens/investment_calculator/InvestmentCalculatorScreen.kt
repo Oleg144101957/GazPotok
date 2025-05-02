@@ -1,5 +1,7 @@
 package com.sbera.sschet.ui.screens.investment_calculator
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -40,6 +42,7 @@ import com.sbera.sschet.ui.elements.CustomOutlinedTextField
 import com.sbera.sschet.ui.elements.IconButton
 import com.sbera.sschet.ui.elements.WhiteButton
 import com.sbera.sschet.ui.theme.Green
+import com.sbera.sschet.util.lockOrientation
 
 @Composable
 fun InvestmentCalculatorScreen(
@@ -48,6 +51,8 @@ fun InvestmentCalculatorScreen(
     viewModel: InvestmentCalculatorViewModel = hiltViewModel()
 ) {
     val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
     var weightInput by remember { mutableStateOf("") }
     var selectedMetal by remember { mutableStateOf("gold") }
     var result by remember { mutableStateOf("") }

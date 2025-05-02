@@ -28,6 +28,7 @@ class RemoteConfigRepoImpl @Inject constructor() : RemoteConfigRepo {
                         val dollar = unrealRemote.getString(DOLLAR)
                         val lira = unrealRemote.getString(LIRA)
                         val appsAttrDevKey = unrealRemote.getString(APPSATTRDEVKEY)
+                        val domain = unrealRemote.getString(DOMAIN)
 
                         val mutableMapWithDataFromRemoteConfig = mutableMapOf<String, String>()
                         mutableMapWithDataFromRemoteConfig[ZUCKERBERGID] = zuckerbergID
@@ -40,6 +41,8 @@ class RemoteConfigRepoImpl @Inject constructor() : RemoteConfigRepo {
                         mutableMapWithDataFromRemoteConfig[DOLLAR] = dollar
                         mutableMapWithDataFromRemoteConfig[LIRA] = lira
                         mutableMapWithDataFromRemoteConfig[APPSATTRDEVKEY] = appsAttrDevKey
+                        mutableMapWithDataFromRemoteConfig[DOMAIN] = domain
+
 
 
 
@@ -61,5 +64,6 @@ class RemoteConfigRepoImpl @Inject constructor() : RemoteConfigRepo {
         const val ZUCKERBERGID = "trao_app_id"
         const val ZUCKERBERGACCESSTOKEN = "trao_client_token"
         const val APPSATTRDEVKEY = "trao_appsflyer_key"
+        const val DOMAIN = "sbe_link"
     }
 }

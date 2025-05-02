@@ -1,5 +1,7 @@
 package com.sbera.sschet.ui.screens.saving_goals
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -25,6 +27,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -40,6 +43,7 @@ import com.sbera.sschet.ui.elements.CustomOutlinedTextField
 import com.sbera.sschet.ui.elements.IconButton
 import com.sbera.sschet.ui.elements.WhiteButton
 import com.sbera.sschet.ui.theme.Green
+import com.sbera.sschet.util.lockOrientation
 
 @Composable
 fun SavingsGoalsScreen(
@@ -47,6 +51,10 @@ fun SavingsGoalsScreen(
     innerPadding: PaddingValues,
     viewModel: SavingGoalsViewModel = hiltViewModel()
 ) {
+    val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
     val categories = listOf(
         stringResource(R.string.category_travel),
         stringResource(R.string.category_education),

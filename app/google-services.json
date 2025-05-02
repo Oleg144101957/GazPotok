@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "139199691166",
-    "project_id": "trao-a1b97",
-    "storage_bucket": "trao-a1b97.firebasestorage.app"
+    "project_number": "773172805474",
+    "project_id": "sber-rasschet",
+    "storage_bucket": "sber-rasschet.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:139199691166:android:0e06995eac6028829afe8f",
+        "mobilesdk_app_id": "1:773172805474:android:26a472688976f206d8763b",
         "android_client_info": {
           "package_name": "com.sbera.sschet"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBYfcxNnlbpCdD0NuIIYY-jI5RPADSooRo"
+          "current_key": "AIzaSyBPZE3QQ7LaE6mw8Lf9uAKwrdIHuONPkO4"
         }
       ],
       "services": {

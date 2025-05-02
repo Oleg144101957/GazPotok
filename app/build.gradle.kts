@@ -15,8 +15,8 @@ android {
         applicationId = "com.sbera.sschet"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -68,4 +68,19 @@ dependencies {
     implementation(libs.androidx.browser)
     implementation(libs.firebase.config.ktx)
     implementation(platform(libs.firebase.bom))
+
+
+    implementation("androidx.browser:browser:1.8.0")
+
+    implementation("com.android.installreferrer:installreferrer:2.2")
+
+    implementation("com.adjust.sdk:adjust-android:5.0.0")
+
+    implementation("com.google.android.gms:play-services-ads-identifier:18.1.0")
+
+    implementation("com.onesignal:OneSignal:4.8.10")
+
+    implementation ("com.appsflyer:af-android-sdk:6.15.2")
+
+    implementation ("com.facebook.android:facebook-android-sdk:16.0.1")
 }

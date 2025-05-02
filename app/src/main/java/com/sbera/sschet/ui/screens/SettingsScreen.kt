@@ -1,5 +1,7 @@
 package com.sbera.sschet.ui.screens
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -19,10 +21,13 @@ import com.sbera.sschet.ui.elements.Background
 import com.sbera.sschet.ui.elements.GreenButton
 import com.sbera.sschet.ui.elements.IconButton
 import com.sbera.sschet.util.CustomTabsUtil
+import com.sbera.sschet.util.lockOrientation
 
 @Composable
 fun SettingsScreen(navController: NavController, innerPadding: PaddingValues) {
     val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
     Box(
         modifier = Modifier
             .fillMaxSize()

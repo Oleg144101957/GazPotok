@@ -1,5 +1,8 @@
 package com.sbera.sschet.ui.screens
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -16,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -27,9 +31,16 @@ import com.sbera.sschet.R
 import com.sbera.sschet.navigation.ScreenRoutes
 import com.sbera.sschet.ui.elements.Background
 import com.sbera.sschet.ui.elements.GreenButton
+import com.sbera.sschet.util.lockOrientation
 
 @Composable
 fun OnboardingScreen(navController: NavController, paddingValues: PaddingValues) {
+
+    BackHandler {}
+    val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
     Box(
         Modifier
             .fillMaxSize()

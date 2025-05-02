@@ -28,8 +28,8 @@ class DataStoreImpl @Inject constructor(private val context: Context) : DataStor
     }
 
     companion object {
-        private const val GOAL = "GOAL"
-        private const val EMPTY = "EMPTY"
+        const val GOAL = "GOAL"
+        const val EMPTY = "EMPTY"
         const val PREFS_NAME = "prefs"
         const val KEY_SAVINGS = "savings_list"
     }

@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.sbera.sschet.ui.screens.content.ContentScreen
 import com.sbera.sschet.ui.screens.AboutScreen
 import com.sbera.sschet.ui.screens.HomeScreen
 import com.sbera.sschet.ui.screens.LoanCalculatorScreen
@@ -30,6 +31,11 @@ fun NavigationHost(navController: NavHostController, innerPadding: PaddingValues
 
         composable(route = ScreenRoutes.AboutScreen.route) {
             AboutScreen(navController, innerPadding)
+        }
+
+
+        composable(route = ScreenRoutes.ContentScreen.route) {
+            ContentScreen(navController)
         }
 
         composable(route = ScreenRoutes.NoNetworkScreen.route) {

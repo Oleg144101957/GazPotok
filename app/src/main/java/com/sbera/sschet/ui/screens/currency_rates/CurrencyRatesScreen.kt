@@ -1,5 +1,7 @@
 package com.sbera.sschet.ui.screens.currency_rates
 
+import android.app.Activity
+import android.content.pm.ActivityInfo
 import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -41,6 +43,7 @@ import com.sbera.sschet.ui.elements.CustomOutlinedTextField
 import com.sbera.sschet.ui.elements.IconButton
 import com.sbera.sschet.ui.elements.WhiteButton
 import com.sbera.sschet.ui.theme.Green
+import com.sbera.sschet.util.lockOrientation
 
 @Composable
 fun CurrencyRatesScreen(
@@ -48,7 +51,10 @@ fun CurrencyRatesScreen(
     innerPadding: PaddingValues,
     viewModel: CurrencyRatesViewModel = hiltViewModel()
 ) {
+
     val context = LocalContext.current
+    val activity = context as? Activity
+    activity?.lockOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
     val currencies = listOf("USD", "EUR", "TRY")
     var fromCurrency by remember { mutableStateOf("TRY") }
     var toCurrency by remember { mutableStateOf("USD") }
