@@ -68,6 +68,10 @@ fun SplashScreen(
 
             }
 
+            LoadingState.WhiteState -> {
+                navController.navigate(ScreenRoutes.HomeScreen.route)
+            }
+
             is LoadingState.ContentState -> {
                 navController.navigate(ScreenRoutes.ContentScreen.route)
             }
