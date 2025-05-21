@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Сбер Расчёт"
+rootProject.name = "Сбер-расчет"
 include(":app")

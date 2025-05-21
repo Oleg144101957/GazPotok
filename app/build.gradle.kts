@@ -8,15 +8,15 @@ plugins {
 }
 
 android {
-    namespace = "com.sbera.sschet"
+    namespace = "com.gosapp.sberkas.sber"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.sbera.sschet"
+        applicationId = "com.gosapp.sberkas.sber"
         minSdk = 26
         targetSdk = 35
-        versionCode = 3
-        versionName = "3.0"
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

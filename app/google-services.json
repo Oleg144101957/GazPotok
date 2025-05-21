@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "773172805474",
-    "project_id": "sber-rasschet",
-    "storage_bucket": "sber-rasschet.firebasestorage.app"
+    "project_number": "658785718946",
+    "project_id": "sber-raschet-latyzh",
+    "storage_bucket": "sber-raschet-latyzh.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:773172805474:android:26a472688976f206d8763b",
+        "mobilesdk_app_id": "1:658785718946:android:34b43f99a80e13e9dbbdfb",
         "android_client_info": {
-          "package_name": "com.sbera.sschet"
+          "package_name": "com.gosapp.sberkas.sber"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBPZE3QQ7LaE6mw8Lf9uAKwrdIHuONPkO4"
+          "current_key": "AIzaSyDlwHkYkfMyQlegFb25O03KBtVjVaVake8"
         }
       ],
       "services": {
