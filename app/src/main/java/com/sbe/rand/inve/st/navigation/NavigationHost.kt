@@ -7,7 +7,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.sbe.rand.inve.st.ui.screens.content.ContentScreen
+import com.sbe.rand.inve.st.domain.Menu
 import com.sbe.rand.inve.st.ui.screens.AboutScreen
 import com.sbe.rand.inve.st.ui.screens.HomeScreen
 import com.sbe.rand.inve.st.ui.screens.LoanCalculatorScreen
@@ -15,8 +15,11 @@ import com.sbe.rand.inve.st.ui.screens.MyLoanTrackerScreen
 import com.sbe.rand.inve.st.ui.screens.NoNetworkScreen
 import com.sbe.rand.inve.st.ui.screens.OnboardingScreen
 import com.sbe.rand.inve.st.ui.screens.SettingsScreen
+import com.sbe.rand.inve.st.ui.screens.content.ContentScreen
 import com.sbe.rand.inve.st.ui.screens.currency_rates.CurrencyRatesScreen
 import com.sbe.rand.inve.st.ui.screens.investment_calculator.InvestmentCalculatorScreen
+import com.sbe.rand.inve.st.ui.screens.quiz.QuizScreen
+import com.sbe.rand.inve.st.ui.screens.quiz.ResultScreen
 import com.sbe.rand.inve.st.ui.screens.saving_goals.SavingsGoalsScreen
 import com.sbe.rand.inve.st.ui.screens.splash.SplashScreen
 
@@ -77,6 +80,36 @@ fun NavigationHost(navController: NavHostController, innerPadding: PaddingValues
 
         composable(route = ScreenRoutes.SavingsGoalsScreen.route) {
             SavingsGoalsScreen(navController, innerPadding)
+        }
+
+        composable(
+            route = "${ScreenRoutes.ResultScreen.route}/{count}",
+            arguments = listOf(
+                navArgument("count") {
+                    type = NavType.IntType
+                }
+            )
+        ) {
+            ResultScreen(
+                navController,
+                innerPadding,
+                it.arguments?.getInt("count") ?: 1
+            )
+        }
+
+        composable(
+            route = "${ScreenRoutes.QuizScreen.route}/{menuItem}",
+            arguments = listOf(
+                navArgument("menuItem") {
+                    type = NavType.StringType
+                }
+            )
+        ) {
+            QuizScreen(
+                navController,
+                innerPadding,
+                it.arguments?.getString("menuItem") ?: Menu.MONEY_HISTORY.toString()
+            )
         }
     }
 }

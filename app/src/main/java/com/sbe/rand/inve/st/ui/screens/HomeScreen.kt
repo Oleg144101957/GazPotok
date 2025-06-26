@@ -21,7 +21,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.appsflyer.internal.AFh1vSDK
 import com.sbe.rand.inve.st.R
+import com.sbe.rand.inve.st.domain.Menu
 import com.sbe.rand.inve.st.navigation.ScreenRoutes
 import com.sbe.rand.inve.st.ui.elements.Background
 import com.sbe.rand.inve.st.ui.elements.GreenButton
@@ -66,6 +68,15 @@ fun Menu(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
+
+        val randomMenu = Menu.entries.random()
+
+        GreenButton(R.string.quiz, modifier = Modifier) {
+            navController.navigate("${ScreenRoutes.QuizScreen.route}/${randomMenu.name}")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
         GreenButton(R.string.currency_rates, modifier = Modifier) {
             navController.navigate(ScreenRoutes.CurrencyRatesScreen.route)
         }
