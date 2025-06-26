@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.gosapp.sberkas.sber"
+    namespace = "com.sbe.rand.inve.st"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.gosapp.sberkas.sber"
+        applicationId = "com.sbe.rand.inve.st"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
