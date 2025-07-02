@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "378377079872",
-    "project_id": "sberinvest-cb0ba",
-    "storage_bucket": "sberinvest-cb0ba.firebasestorage.app"
+    "project_number": "826719423004",
+    "project_id": "sberinvest2-db531",
+    "storage_bucket": "sberinvest2-db531.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:378377079872:android:aa6fbbd0759d1a597a63a5",
+        "mobilesdk_app_id": "1:826719423004:android:8f3cb224b4d1628c9e6dd9",
         "android_client_info": {
-          "package_name": "com.sbe.rand.inve.st"
+          "package_name": "com.sbe.rand.inve.sttwo"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDAD8BcMML2HrHZdf2Iw67H4gighgpg5hs"
+          "current_key": "AIzaSyD1o7MfZGdr61KqBKNlchMhR-UkcFZzzFo"
         }
       ],
       "services": {

@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sbe.rand.inve.st"
+    namespace = "com.sbe.rand.inve.sttwo"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.sbe.rand.inve.st"
+        applicationId = "com.sbe.rand.inve.sttwo"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -83,4 +83,7 @@ dependencies {
     implementation ("com.appsflyer:af-android-sdk:6.15.2")
 
     implementation ("com.facebook.android:facebook-android-sdk:16.0.1")
+
+    implementation("com.google.firebase:firebase-database-ktx:21.0.0")
+
 }
