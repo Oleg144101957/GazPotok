@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sbe.rand.inve.sttwo"
+    namespace = "com.gasin.est.vkl"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.sbe.rand.inve.sttwo"
+        applicationId = "com.gasin.est.vkl"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

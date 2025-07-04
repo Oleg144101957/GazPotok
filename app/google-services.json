@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "826719423004",
-    "project_id": "sberinvest2-db531",
-    "storage_bucket": "sberinvest2-db531.firebasestorage.app"
+    "project_number": "423293197433",
+    "project_id": "gazinvvklady",
+    "storage_bucket": "gazinvvklady.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:826719423004:android:8f3cb224b4d1628c9e6dd9",
+        "mobilesdk_app_id": "1:423293197433:android:46fdf2a4614ffb26b1c8a8",
         "android_client_info": {
-          "package_name": "com.sbe.rand.inve.sttwo"
+          "package_name": "com.gasin.est.vkl"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD1o7MfZGdr61KqBKNlchMhR-UkcFZzzFo"
+          "current_key": "AIzaSyDT8jmc2ytDEi0WNbV9XMouLXnKapJ91Q8"
         }
       ],
       "services": {
