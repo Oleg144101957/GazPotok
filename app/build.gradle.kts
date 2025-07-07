@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.gasin.est.vkl"
+    namespace = "com.qua.ntum.barh.at"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.gasin.est.vkl"
+        applicationId = "com.qua.ntum.barh.at"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -85,5 +85,7 @@ dependencies {
     implementation ("com.facebook.android:facebook-android-sdk:16.0.1")
 
     implementation("com.google.firebase:firebase-database-ktx:21.0.0")
+
+
 
 }

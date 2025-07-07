@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "423293197433",
-    "project_id": "gazinvvklady",
-    "storage_bucket": "gazinvvklady.firebasestorage.app"
+    "project_number": "263998229183",
+    "project_id": "quantum-bharat",
+    "storage_bucket": "quantum-bharat.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:423293197433:android:46fdf2a4614ffb26b1c8a8",
+        "mobilesdk_app_id": "1:263998229183:android:28410c423f0b064098d40a",
         "android_client_info": {
-          "package_name": "com.gasin.est.vkl"
+          "package_name": "com.qua.ntum.barh.at"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDT8jmc2ytDEi0WNbV9XMouLXnKapJ91Q8"
+          "current_key": "AIzaSyA8FalRWvfXmeiwflU_UQcmsUvYIRdD7-A"
         }
       ],
       "services": {

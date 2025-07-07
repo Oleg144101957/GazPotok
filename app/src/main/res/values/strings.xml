@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">ГазИнвестВклады</string>
+    <string name="app_name">Quantum Bharat</string>
     <string name="about_btn">О приложении</string>
     <string name="settings">Настройки</string>
-    <string name="about">В этом приложении вы узнаете, как работает инвестирование, с чего начать, а также получите советы по грамотной диверсификации портфеля. Оно будет полезно как начинающим, так и опытным инвесторам. Приложение носит образовательный и информационный характер.</string>
+    <string name="about">Это приложение поможет вам рассчитать потенциальную доходность инвестиций за период от 1 до 36 месяцев. Вы сможете проанализировать доходность по следующим направлениям:
+Золото, Серебро, Платина, Палладий, Недвижимость и акции S&amp;P 500.
+
+Интерфейс прост и понятен: выберите категорию, укажите сумму и срок — и получите расчёт на основе исторических данных.
+Приложение носит образовательный и информационный характер и будет полезно как начинающим, так и опытным инвесторам.</string>
     <string name="no_internet">Нет подключения к интернету\n\nПожалуйста, попробуйте позже</string>
     <string name="try_again">Далее</string>
     <string name="welcome">Добро пожаловать</string>
@@ -44,4 +48,16 @@
     <string name="category_gadgets">Гаджеты</string>
     <string name="category_other">Другое</string>
     <string name="quiz">Образовательный Квиз</string>
+    <string name="modeling_gold_returns">Моделирование доходности золота</string>
+    <string name="modeling_silver_returns">Моделирование доходности серебра</string>
+    <string name="modeling_platinum_returns">Моделирование доходности платины</string>
+    <string name="modeling_palladium_returns">Моделирование доходности палладиума</string>
+    <string name="modeling_real_estate_returns">Моделирование доходности недвижимости</string>
+    <string name="modeling_sp_500stocks_returns">Моделирование доходности акций s&amp;p 500</string>
+    <string name="profit_prefix">Прибыль: </string>
+    <string name="unknown_profit">Прибыль: —</string>
+    <string name="months_label">%1$d</string>
+    <string name="input_label">Введите сумму</string>
+    <string name="calculate_button">Узнать доходность</string>
+    <string name="return_result">Доходность за %1$d мес: %2$.2f%%</string>
 </resources>
