@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.qua.ntum.barh.at"
+    namespace = "com.gos.inv.est.info"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.qua.ntum.barh.at"
+        applicationId = "com.gos.inv.est.info"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
