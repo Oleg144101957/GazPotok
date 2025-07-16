@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Gos Invest info"
+rootProject.name = "Cбeр Актив"
 include(":app")

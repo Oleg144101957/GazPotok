@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.gos.inv.est.info"
+    namespace = "com.sb.er.act.iv"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.gos.inv.est.info"
+        applicationId = "com.sb.er.act.iv"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -86,6 +86,8 @@ dependencies {
 
     implementation("com.google.firebase:firebase-database-ktx:21.0.0")
 
+    implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation("androidx.compose.material3:material3:1.1.0")
 
 
 }

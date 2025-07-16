@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "530936405038",
-    "project_id": "gosinvestinfo-777a0",
-    "storage_bucket": "gosinvestinfo-777a0.firebasestorage.app"
+    "project_number": "687638346934",
+    "project_id": "sberactiv-cabb8",
+    "storage_bucket": "sberactiv-cabb8.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:530936405038:android:11350e8465441ee47fd3bf",
+        "mobilesdk_app_id": "1:687638346934:android:bbe25a866b81f31e433a17",
         "android_client_info": {
-          "package_name": "com.gos.inv.est.info"
+          "package_name": "com.sb.er.act.iv"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCJUs340DkUd9WnIbDsY7-zrAmcTRPviwY"
+          "current_key": "AIzaSyCsQPS7TXQ1dpJezPfZKvHXHNcStRpTs_4"
         }
       ],
       "services": {
