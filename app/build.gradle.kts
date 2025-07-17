@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sb.er.act.iv"
+    namespace = "ru.vt.bassis.tant"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.sb.er.act.iv"
+        applicationId = "ru.vt.bassis.tant"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -74,20 +74,16 @@ dependencies {
 
     implementation("com.android.installreferrer:installreferrer:2.2")
 
-    implementation("com.adjust.sdk:adjust-android:5.0.0")
+    implementation("com.adjust.sdk:adjust-android:5.4.1")
 
-    implementation("com.google.android.gms:play-services-ads-identifier:18.1.0")
+    implementation("com.google.android.gms:play-services-ads-identifier:18.2.0")
 
-    implementation("com.onesignal:OneSignal:4.8.10")
-
-    implementation ("com.appsflyer:af-android-sdk:6.15.2")
-
-    implementation ("com.facebook.android:facebook-android-sdk:16.0.1")
+    implementation("com.onesignal:OneSignal:5.1.35")
 
     implementation("com.google.firebase:firebase-database-ktx:21.0.0")
 
-    implementation("io.coil-kt:coil-compose:2.4.0")
-    implementation("androidx.compose.material3:material3:1.1.0")
+    implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation("androidx.compose.material3:material3:1.3.2")
 
 
 }

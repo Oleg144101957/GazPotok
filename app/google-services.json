@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "687638346934",
-    "project_id": "sberactiv-cabb8",
-    "storage_bucket": "sberactiv-cabb8.firebasestorage.app"
+    "project_number": "254872064106",
+    "project_id": "v-assistant-room",
+    "storage_bucket": "v-assistant-room.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:687638346934:android:bbe25a866b81f31e433a17",
+        "mobilesdk_app_id": "1:254872064106:android:34b7f310f93aa2a1073a13",
         "android_client_info": {
-          "package_name": "com.sb.er.act.iv"
+          "package_name": "ru.vt.bassis.tant"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCsQPS7TXQ1dpJezPfZKvHXHNcStRpTs_4"
+          "current_key": "AIzaSyDeip_wrAGmucwLb5pJaDdnXr7srLlVMvQ"
         }
       ],
       "services": {
