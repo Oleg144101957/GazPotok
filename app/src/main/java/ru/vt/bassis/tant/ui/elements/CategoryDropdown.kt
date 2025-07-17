@@ -34,7 +34,7 @@ fun CategoryDropdown(
             value = selectedCategory,
             onValueChange = {},
             readOnly = true,
-            label = { Text("Категория") },
+            label = { Text("Категория", color = Color.Black) },
             trailingIcon = {
                 ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
             },
@@ -42,10 +42,11 @@ fun CategoryDropdown(
                 .menuAnchor() // Важно для корректной позиции выпадающего списка!
                 .fillMaxWidth(),
             colors = TextFieldDefaults.colors(
+                focusedTextColor = Color.Black,
                 focusedContainerColor = Color.White,
                 unfocusedContainerColor = Color.White,
                 unfocusedIndicatorColor = Color.Gray,
-                focusedIndicatorColor = Color.Black,
+                focusedIndicatorColor = Color.Gray,
                 cursorColor = Color.Black
             )
         )

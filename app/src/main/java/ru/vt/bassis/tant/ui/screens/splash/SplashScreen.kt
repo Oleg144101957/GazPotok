@@ -28,7 +28,7 @@ import ru.vt.bassis.tant.R
 import ru.vt.bassis.tant.domain.grey.LoadingState
 import ru.vt.bassis.tant.navigation.ScreenRoutes
 import ru.vt.bassis.tant.ui.elements.Background
-import ru.vt.bassis.tant.ui.elements.BallScaleMultipleIndicator
+import ru.vt.bassis.tant.ui.elements.MorphingShapeLoadingAnimation
 import ru.vt.bassis.tant.util.lockOrientation
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
@@ -61,7 +61,6 @@ fun SplashScreen(
         launcher.launch(permission)
 
 
-
         val soundId = soundPool.load(context, R.raw.loading_sound, 1)
 
         soundPool.setOnLoadCompleteListener { _, sampleId, _ ->
@@ -88,7 +87,7 @@ fun SplashScreen(
     LaunchedEffect(state) {
         when (state) {
             LoadingState.InitState -> {
-                splashViewModel.load(context,"291hn7z3xrb4")
+                splashViewModel.load(context, "291hn7z3xrb4")
             }
 
             LoadingState.WhiteState -> {
@@ -115,7 +114,7 @@ fun SplashScreen(
             verticalArrangement = Arrangement.Center
         ) {
             Spacer(Modifier.height(128.dp))
-            BallScaleMultipleIndicator()
+            MorphingShapeLoadingAnimation()
         }
     }
 }

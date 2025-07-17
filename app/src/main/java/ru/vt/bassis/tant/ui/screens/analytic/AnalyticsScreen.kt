@@ -131,6 +131,7 @@ fun AnalyticsScreen(navController: NavController, viewModel: ExpensesViewModel =
                     Text(
                         text = "По категориям",
                         fontSize = 18.sp,
+                        color = Color.Black,
                         fontWeight = FontWeight.Bold
                     )
                     Spacer(modifier = Modifier.height(12.dp))
@@ -147,7 +148,7 @@ fun AnalyticsScreen(navController: NavController, viewModel: ExpensesViewModel =
                             Spacer(modifier = Modifier.width(8.dp))
                             Text(
                                 text = "${slice.category}: ${if (total == 0.0) 0 else (slice.amount / total * 100).toInt()}%",
-                                fontSize = 14.sp
+                                fontSize = 14.sp, color = Color.Black,
                             )
                         }
                     }
