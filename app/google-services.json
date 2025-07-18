@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "254872064106",
-    "project_id": "v-assistant-room",
-    "storage_bucket": "v-assistant-room.firebasestorage.app"
+    "project_number": "991206783481",
+    "project_id": "gazfonnachi",
+    "storage_bucket": "gazfonnachi.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:254872064106:android:34b7f310f93aa2a1073a13",
+        "mobilesdk_app_id": "1:991206783481:android:b4c005b004314076b3e528",
         "android_client_info": {
-          "package_name": "ru.vt.bassis.tant"
+          "package_name": "gf.na.chisle.nia"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDeip_wrAGmucwLb5pJaDdnXr7srLlVMvQ"
+          "current_key": "AIzaSyAIfXqPs1nz9a2-GkOALGfgD6TZFa2RLmc"
         }
       ],
       "services": {

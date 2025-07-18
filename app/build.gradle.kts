@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.vt.bassis.tant"
+    namespace = "gf.na.chisle.nia"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ru.vt.bassis.tant"
+        applicationId = "gf.na.chisle.nia"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -74,16 +74,16 @@ dependencies {
 
     implementation("com.android.installreferrer:installreferrer:2.2")
 
-    implementation("com.adjust.sdk:adjust-android:5.4.1")
-
     implementation("com.google.android.gms:play-services-ads-identifier:18.2.0")
 
     implementation("com.onesignal:OneSignal:5.1.35")
 
-    implementation("com.google.firebase:firebase-database-ktx:21.0.0")
+    implementation ("com.appsflyer:af-android-sdk:6.17.0")
 
+    implementation ("com.facebook.android:facebook-android-sdk:18.0.3")
+
+    implementation("com.google.firebase:firebase-database-ktx:21.0.0")
     implementation("io.coil-kt:coil-compose:2.7.0")
     implementation("androidx.compose.material3:material3:1.3.2")
-
 
 }

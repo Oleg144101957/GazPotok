@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "V-Ассистент"
+rootProject.name = "Газфон Начисления"
 include(":app")
