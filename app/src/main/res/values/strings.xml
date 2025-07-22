@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Газфон Начисления</string>
+    <string name="app_name">Т Аналитика</string>
     <string name="about_btn">О приложении</string>
     <string name="settings">Настройки</string>
     <string name="about">
@@ -72,5 +72,6 @@
 
     <string name="add_photo">Добавить фото чека</string>
     <string name="save_expense">Сохранить трату</string>
-
+    <string name="list_of_unwanted_expenses">Список нежелательных трат</string>
+    <string name="add_expense">Добавить нежелательную трату</string>
 </resources>
