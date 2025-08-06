@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.tan.alitic.rch"
+    namespace = "ru.gz.po.tok41"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ru.tan.alitic.rch"
+        applicationId = "ru.gz.po.tok41"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

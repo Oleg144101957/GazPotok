@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Газфон Начисления"
+rootProject.name = "ГазПоток"
 include(":app")

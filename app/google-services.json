@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "619590581309",
-    "project_id": "t-analitic-ramen-jul-22",
-    "storage_bucket": "t-analitic-ramen-jul-22.firebasestorage.app"
+    "project_number": "474536733658",
+    "project_id": "gazpotokbaks",
+    "storage_bucket": "gazpotokbaks.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:619590581309:android:7e4e8421dd5de57cf8be54",
+        "mobilesdk_app_id": "1:474536733658:android:a3fe3f2b3344059d5c6ee3",
         "android_client_info": {
-          "package_name": "ru.tan.alitic.rch"
+          "package_name": "ru.gz.po.tok41"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDhye4pjhc4mYebWzPzeW7zI09GJa3eG5A"
+          "current_key": "AIzaSyC9kG_ZaG7KpqjPtS_hZjbcFVsRcBdxhjk"
         }
       ],
       "services": {
