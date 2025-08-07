@@ -84,7 +84,8 @@ fun AnalyticsScreen(
                 Text(
                     text = "Ваши расходы за месяц",
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "%.0f ₽".format(total), fontSize = 24.sp, color = Color.Black)
@@ -102,7 +103,8 @@ fun AnalyticsScreen(
                 Text(
                     text = "Самая большая категория трат",
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text("$topCategory: %.0f ₽".format(topCategoryAmount), fontSize = 20.sp, color = Color.Black)
@@ -120,7 +122,8 @@ fun AnalyticsScreen(
                 Text(
                     text = "Черный список трат",
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
 
@@ -128,7 +131,7 @@ fun AnalyticsScreen(
                     Text(
                         text = "Вы пока не добавили нежелательные траты.\n\nЕсли хотите ограничить себя в покупках, откройте настройки → Черный список трат.",
                         fontSize = 16.sp,
-                        color = Color.Gray
+                        color = Color.Black
                     )
                 } else {
                     blacklist.forEach { item ->
@@ -150,7 +153,8 @@ fun AnalyticsScreen(
                 Text(
                     text = "Совет месяца",
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(advice, fontSize = 16.sp, color = Color.Black)
